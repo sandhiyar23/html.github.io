@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+    <style>
+        body {
+            background-image: url(https://thumbs.dreamstime.com/b/cloud-sky-pastel-rainbow-colored-background-means-color-gradation-abstract-cloud-sky-pastel-rainbow-182688187.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            font-size: 50px;
+            padding: 100px;
+        }
+
+        form {
+            height: fit-content;
+            width: auto;
+            background-color: rgba(255, 255, 255, 0.7); /* Adding a white background with some opacity for better visibility */
+            padding: 20px; /* Adding some padding for spacing */
+            display: inline-block; /* Make the form inline-block to center it horizontally */
+            text-align: left; /* Align the text to the left within the form */
+        }
+
+        label {
+            display: block; /* Make labels block elements for better spacing */
+            margin-bottom: 10px; /* Add some margin below each label */
+        }
+
+        input {
+            margin-bottom: 10px; /* Add some margin below each input for spacing */
+        }
+
+        /* Additional styling for gender and subject options */
+        .gender-label, .subject-label {
+            display: inline-block; /* Make gender and subject labels appear in the same line */
+            margin-right: 10px; /* Add some margin between gender and subject options */
+        }
+
+        .subject-checkbox {
+            margin-right: 5px; /* Add some margin between subject checkboxes */
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="name">Name</label>
+        <input id="name" type="text"><br>
+
+        <label for="dob">Date of Birth</label>
+        <input id="dob" type="date"><br>
+
+        <label for="address">Address</label>
+        <input id="address" type="text"><br>
+
+        <div>
+            <span class="gender-label">Gender</span>
+            <input type="radio" name="gender" id="female"><label for="female">Female</label>
+            <input type="radio" name="gender" id="male"><label for="male">Male</label><br>
+        </div>
+
+        <div>
+            <span class="subject-label">Subjects</span>
+            <input type="checkbox" name="subject" id="maths" class="subject-checkbox"><label for="maths">Maths</label>
+            <input type="checkbox" name="subject" id="science" class="subject-checkbox"><label for="science">Science</label>
+            <input type="checkbox" name="subject" id="tamil" class="subject-checkbox"><label for="tamil">Tamil</label>
+        </div>
+    </form>
+</body>
+</html>
